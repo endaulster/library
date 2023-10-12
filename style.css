@@ -21,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 66px 0 66px;
+    
 }
 
 #library-logo {
@@ -42,7 +43,10 @@
 
 .main {
     height: 85vh;
-  
+    background-image: linear-gradient(to bottom, #ffedf2, #fdf2f8, #fcf6fc, #fdfbfe, #ffffff);
+    box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
 }
 
 /* FOOTER */
