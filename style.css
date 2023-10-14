@@ -1,7 +1,14 @@
+@import url("ttps://fonts.googleapis.com/css?family=Montserrat:100,200,30");
+
 * {
     padding: 0;
     margin: 0;
     border: 0;
+    font-family: Monserrat, Times, serif;
+}
+
+.submit-book > h1, p{
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .wrapper {
@@ -10,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 /* HEADER */
@@ -37,6 +45,7 @@
     background-size: cover;
     background-color: transparent;
     filter: invert(100%);
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -53,24 +62,75 @@
 
 .submit-book {
     position: absolute;
-    background-color: grey;
+    background-color: white;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    height: 200px;
-    width: 270px;
+    transform: translate(-50%,-50%) scale(0.1);
+    height: 350px;
+    width: 400px;
     padding: 20px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 3px 9px 14px 7px rgba(0,0,0,0.19);
+    -webkit-box-shadow: 3px 9px 14px 7px rgba(0,0,0,0.19);
+    -moz-box-shadow: 3px 9px 14px 7px rgba(0,0,0,0.19);
+    visibility: hidden;
+    transition: transform 0.2s, top 0.2s;
 }
 
-.input {
+.sub-bop {
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.inputs {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    padding-top: 10px;
+    
+}
+
+.inputs > input {
+    width: 350px;
+    height: 33px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 213, 213);
+    font-size: 1em;
+}
+
+.submit-book p {
+    max-width: 350px;
+}
+
+/* MAIN NEWBOOK BUTTONS */
+
+.inputs-buttons {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#inputs-status, #inputs-submit {
+    width: 130px;
+    height: 35px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+}
+
+#inputs-submit {
+    background-color: rgb(137, 176, 255);
+}
+
+#inputs-status {
+    background-color: rgb(255, 137, 137);
 }
 
 

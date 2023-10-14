@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="brain.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,7 +14,7 @@
                 <img src="img/icons/library.svg" alt="Library logo" id="library-logo">
             </div>
             <div class="boton">
-                <button id="add-new">
+                <button type="submit" id="add-new" onclick="openModal()">
                 </button>
             </div>
         </div>
@@ -24,22 +23,23 @@
         <div class="main">B</div>
 
             <!-- MAIN NEWBOOK -->
-            <div class="submit-book">
+            <div class="submit-book" id="sub-b">
                 <h1>Add New Book</h1>
+                <p>Fill the form and add a new book to your library!</p>
                 <form action="" method="post">
-                    <div class="input">
-                        <label for="authorName">Author</label>
-                        <input type="text" name="authorName" id="authoNamer">
+                    <div class="inputs">
+                        <input type="text" name="authorName" id="authorNamer" placeholder="Author's Name" required>
                     </div>
-                    <div class="input">
-                        <label for="bookName">Book</label>
-                        <input type="text" name="bookName" id="bookName"></div>
-                    <div class="input">
-                        <label for="pagesNumber">Number of pages</label>
-                        <input type="text" name="pagesNumber" id="pagesNumber"></div>
-                    <div class="input">
-                        <label for="statusOfBook">Read or not</label>
-                        <input type="text" name="statusOfBook" id="statusOfBook"></div>
+                    <div class="inputs">
+                        <input type="text" name="bookName" id="bookName" placeholder="Book's name" required>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" name="pagesNumber" id="pagesNumber" placeholder="Number of pages" min="0" required>
+                    </div>
+                    <div class="inputs-buttons">
+                        <button id="inputs-status" type="button">Not Read</button>
+                        <button id="inputs-submit" type="submit" onclick="closeModal()">Submit</button>
+                    </div>
                 </form>
             </div>
 
@@ -47,5 +47,6 @@
         <!-- FOOTER -->
         <div class="footer">this is the footer</div>
     </div>
+    <script src="brain.js"></script>
 </body>
 </html>
