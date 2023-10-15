@@ -107,6 +107,7 @@
     max-width: 350px;
 }
 
+
 /* MAIN NEWBOOK BUTTONS */
 
 .inputs-buttons {
@@ -131,8 +132,8 @@
 
 #inputs-status {
     background-color: rgb(255, 137, 137);
+    transition: transform 0.2s, top 0.2s;
 }
-
 
 /* FOOTER */
 

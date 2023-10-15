@@ -26,18 +26,18 @@
             <div class="submit-book" id="sub-b">
                 <h1>Add New Book</h1>
                 <p>Fill the form and add a new book to your library!</p>
-                <form action="" method="post">
+                <form id="theForm" action="" method="post" onsubmit="getInfo()">
                     <div class="inputs">
-                        <input type="text" name="authorName" id="authorNamer" placeholder="Author's Name" required>
+                        <input type="text" id="authorName" placeholder="Author's Name" required>
                     </div>
                     <div class="inputs">
-                        <input type="text" name="bookName" id="bookName" placeholder="Book's name" required>
+                        <input type="text" id="bookName" placeholder="Book's name" required>
                     </div>
                     <div class="inputs">
-                        <input type="number" name="pagesNumber" id="pagesNumber" placeholder="Number of pages" min="0" required>
+                        <input type="number" id="pagesNumber" placeholder="Number of pages" min="0" required>
                     </div>
                     <div class="inputs-buttons">
-                        <button id="inputs-status" type="button">Not Read</button>
+                        <button id="inputs-status" type="button" onclick="changeStatus()">Not Read</button>
                         <button id="inputs-submit" type="submit" onclick="closeModal()">Submit</button>
                     </div>
                 </form>
