@@ -9,7 +9,35 @@ function Book(a, b, c, d) {
 
 function addBookToLibrary(a, b, c , d) {
     myLibrary.push(new Book(a, b, c , d));
+    createCard(a, b, c, d);
 }
+
+function createCard(author, book, pages, status){
+    // We create the card
+    let cContainer = document.getElementById("mainw");
+    let newCard = document.createElement("div");
+    cContainer.appendChild(newCard).className="card";
+    // We add the rest
+    
+    // We add the Author name
+    let dataAuthor = document.createElement("p");
+    dataAuthor.textContent = author;
+    newCard.appendChild(dataAuthor).className="dataAuthor";
+
+    // We add the Books Name
+    let dataBook = document.createElement("p");
+    dataBook.textContent = book;
+    newCard.appendChild(dataBook).className="dataBook";
+
+    // We add the page Numbers
+    let dataPages = document.createElement("p");
+    dataPages.textContent = pages;
+    newCard.appendChild(dataPages).className="dataPages";
+
+
+}
+
+
 
 // READING FORMS CONTENT
 
