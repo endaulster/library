@@ -32,6 +32,7 @@ let theForm = document.getElementById("theForm");
 
 theForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    modal.classList.remove("sub-bop");
     theForm.reset();
 })
 
@@ -41,11 +42,6 @@ let modal = document.getElementById("sub-b");
 
 function openModal() {
     modal.classList.add("sub-bop");
-}
-
-function closeModal() {
-    modal.classList.remove("sub-bop");
-
 }
 
 // READ STATUS
