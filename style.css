@@ -53,6 +53,7 @@
 
 .main {
     height: auto;
+    min-height: 76.67vh;
     max-width: 100w;
     background-image: linear-gradient(to bottom, #ffedf2, #fdf2f8, #fcf6fc, #fdfbfe, #ffffff);
     box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
@@ -188,4 +189,18 @@
     height: 5vh;
     background-image: radial-gradient(circle, #000000, #0c0c0c, #141414, #1b1b1b, #212121);
     color: white;
+    font-family: Helvetica, Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.gitlogo{
+    filter: invert(100%);
+    transition: 0.5s;
+}
+
+.gitlogo:hover{
+    transform: scale(1.05);
 }

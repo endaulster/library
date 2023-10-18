@@ -9,7 +9,7 @@ function Book(a, b, c, d) {
 
 function addBookToLibrary(a, b, c , d) {
     myLibrary.push(new Book(a, b, c , d));
-    createCard(a, b, c, d);
+    createCard();
 }
 
 function createCard(author, book, pages, status){
@@ -79,6 +79,16 @@ function createCard(author, book, pages, status){
             sabro.style.backgroundColor = "rgb(97 203 97)";
         }
 
+    } ));
+
+
+    let allDeletes = document.querySelectorAll(".removerButton");
+
+    allDeletes.forEach(del => del.addEventListener("mousedown", function()
+    { 
+        let id = del.parentElement.parentElement.id;
+        myLibrary.splice(id, 1);
+        createCard();
     } ));
 
 
