@@ -143,3 +143,8 @@ function changeStatus(){
         statusOf = false;
     }
 }
+
+// We add some example book
+
+addBookToLibrary("J.K. Rowling", "Harry Potter and the Sorcerer's Stone", 420, "Not Read");    
+
