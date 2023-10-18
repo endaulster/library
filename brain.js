@@ -94,16 +94,6 @@ function createCard(author, book, pages, status){
 
 }
 
-addBookToLibrary("J. K. Rowling", "Harry Potter: The Philosopher's Stone", 420, "Not Read");
-addBookToLibrary("J. K. Rowling", "Harry Potter: The Philosopher's Stone", 420, "Not Read");
-addBookToLibrary("J. K. Rowling", "Harry Potter: The Philosopher's Stone", 420, "Not Read");
-addBookToLibrary("J. K. Rowling", "Harry Potter: The Philosopher's Stone", 420, "Not Read");
-addBookToLibrary("J. K. Rowling", "Harry Potter: The Philosopher's Stone", 420, "Not Read");
-addBookToLibrary("J. K. Rowling", "Harry Potter: The Philosopher's Stone", 420, "Not Read");
-
-
-
-
 // READING FORMS CONTENT
 
 function getInfo(){
