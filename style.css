@@ -53,7 +53,7 @@
 
 .main {
     height: auto;
-    min-height: 76.67vh;
+    min-height: 85vh;
     max-width: 100w;
     background-image: linear-gradient(to bottom, #ffedf2, #fdf2f8, #fcf6fc, #fdfbfe, #ffffff);
     box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
@@ -72,6 +72,7 @@
     height: 300px;
     padding: 20px;
     border-radius: 15px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
