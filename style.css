@@ -5,6 +5,7 @@
     margin: 0;
     border: 0;
     font-family: Monserrat, Times, serif;
+    overflow-x: hidden;
 }
 
 .submit-book > h1, p{
@@ -12,7 +13,7 @@
 }
 
 .wrapper {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -51,21 +52,23 @@
 /* MAIN */
 
 .main {
-    height: 85vh;
+    height: auto;
+    max-width: 100w;
     background-image: linear-gradient(to bottom, #ffedf2, #fdf2f8, #fcf6fc, #fdfbfe, #ffffff);
     box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
     -webkit-box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
     -moz-box-shadow: 1px 40px 24px -39px rgba(0,0,0,0.75) inset;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 33px;
+    gap: 100px;
 }
 
 /* MAIN CARDS */
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     padding: 20px;
     border-radius: 15px;
     display: flex;
@@ -76,6 +79,31 @@
     -webkit-box-shadow: 3px 9px 14px 7px rgba(0,0,0,0.19);
     -moz-box-shadow: 3px 9px 14px 7px rgba(0,0,0,0.19);
 }
+
+.buttonCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttonCon button {
+    width: 300px;
+    height: 33px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+}
+
+.dataStatus {
+    background-color: rgb(255, 137, 137);
+}
+
+.removerButton {
+    background-color: rgba(78, 0, 142, 0.6);
+}
+
 
 /* MAIN POPUP */
 
